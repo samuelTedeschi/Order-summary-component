@@ -1,0 +1,169 @@
+/*  
+font-family: "Red Hat Display", sans-serif;
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca o SVG atrás de outros elementos */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 3px 3px 3px gainsboro;
+  width: 450px;
+}
+
+.img-header {
+  overflow: hidden;
+}
+
+.img-header img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.container-header {
+  width: 300px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.container-header h2 {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+
+.container-header p {
+  font-size: 16px;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.container-plano {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.container-plano img {
+  width: 40px;
+}
+
+.pres {
+  margin-left: 20px;
+}
+
+.pres p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.container-plano a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 90px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  width: 340px;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(223, 47%, 23%);
+}
+
+.cancel {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 90%;
+  }
+
+  .container-header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .container-header h2 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+
+  .container-header p {
+    font-size: 14px;
+  }
+
+  .container-plano {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container-plano img {
+    margin-bottom: 10px;
+  }
+
+  .pres {
+    margin-left: 0;
+  }
+
+  .container-plano a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
